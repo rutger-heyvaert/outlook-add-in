@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="TaskPaneApp">
+  <Id>12345678-9abc-def0-1234-56789abcdef0</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Your Name</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Appointment Searcher"/>
+  <Description DefaultValue="Scans for '//search' and inserts API result"/>
+  <Hosts>
+    <Host Name="Outlook"/>
+  </Hosts>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="Mailbox"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+           <SourceLocation DefaultValue="https://rutger-heyvaert.github.io/outlook-addin/index.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+</OfficeApp>
